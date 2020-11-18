@@ -1,0 +1,53 @@
+body {
+  position: fixed;
+  padding: 0 10vw;
+  background-image: url("../images/index-background.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.content {
+  position: relative;
+  margin-top: 250px;
+}
+
+.welcome-wrapper {
+  position: absolute;
+  top: 20%;
+  left: 49%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.welcome__title {
+  color: #F7F7FF;
+  padding-bottom: 30px;
+}
+.welcome__title span {
+  color: #4392F1;
+}
+.welcome__description {
+  padding: 30px 0 60px 0;
+  color: #F7F7FF;
+}
+.welcome__description span {
+  color: #4392F1;
+}
+.welcome__button-about-me, .welcome__button-start-to-learn {
+  padding: 10px 30px;
+  background-color: #4392F1;
+  border: none;
+  border: 1px solid #4392F1;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.welcome__button-start-to-learn {
+  margin-left: 50px;
+}
+.welcome__button-about-me:hover, .welcome__button-start-to-learn:hover{
+  background-color: #F7F7FF;
+  color: #0d0d0d;
+}

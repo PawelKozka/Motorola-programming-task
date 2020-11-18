@@ -19,7 +19,7 @@
   list-style: none;
   padding: 30px 50px;
   font-size: 15px;
-  margin: 0 10vw;
+  margin: 0 20vw;
 }
 .navigation__list__item {
   display: inline-block;
@@ -40,10 +40,6 @@
 .navigation__list__item:hover .navigation__list__item__link{
   color:#4392F1 ; 
  }
- .home{
-  font-weight: 700;
-  color: #4392F1;
-}
 i {
   display: inline-block;
   font-size: 16px;

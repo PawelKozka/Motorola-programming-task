@@ -9,6 +9,23 @@ body {
   min-height: 100vh;
 }
 
+/* navigation */
+.home{
+  font-weight: 700;
+  color: #4392F1;
+}
+
+/* footer */
+
+.footer__left-section__title {
+  color: #F7F7FF;
+}
+.footer__right-section__title {
+  color: #F7F7FF;
+}
+
+/* content */
+
 .content {
   position: relative;
   margin-top: 250px;

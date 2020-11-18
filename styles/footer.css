@@ -1,8 +1,8 @@
 .footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
-  color: #F7F7FF;
+  background-color: #F7F7FF;
   height: 100px;
   width: 100%;
 }
@@ -19,6 +19,7 @@
 .footer__left-section__title {
   padding: 5px;
   font-weight: 300;
+  color: #1B1B1E;
 }
 .footer__left-section__title span {
   color:#4392F1 ; 
@@ -26,6 +27,7 @@
 .footer__right-section-wrapper {
   margin-right: 50px;
   padding: 5px;
+  color: #1B1B1E;
 }
 .footer__navigation__list {
   list-style: none;
@@ -47,8 +49,4 @@
 }
 .footer__navigation__list__item:hover .footer__navigation__list__item__link{
   color:#4392F1 ; 
-}
-.home{
-  font-weight: 700;
-  color: #4392F1;
 }

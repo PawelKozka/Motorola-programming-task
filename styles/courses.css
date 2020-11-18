@@ -1,0 +1,277 @@
+body {
+  padding: 0 10vw;
+  min-height: 100vh;
+  background-color: #F7F7FF;
+}
+
+/* navigation */
+
+.navigation {
+  background-color: #F7F7FF;
+  z-index: 1;
+}
+.navigation__list {
+  border-bottom: 1px solid #1B1B1E;
+}
+.navigation__list__item__link {
+  font-weight: 300;
+  color: #1B1B1E;
+}
+i {
+  font-size: 16px;
+  color: #1B1B1E;
+}
+
+/* footer */
+
+.footer__wrapper{
+  border-top: 1px solid #1B1B1E;
+}
+.footer__navigation__list__item__link {
+  color:#1B1B1E;
+}
+
+.courses{
+  font-weight: 700;
+  color: #4392F1;
+}
+/* content */
+
+.content {
+  margin: 150px 0;
+}
+#courses-list {
+  list-style: none;
+}
+.article__wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 50px 150px;
+  height: 300px;
+}
+.article__picture {
+  display: inline;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+.article__text {
+  color: #1B1B1E;
+}
+.article__teacher {
+  font-weight: 300;
+  padding: 15px 0;
+}
+.article__teacher span {
+  font-weight: 500;
+  color: #4392F1;;
+}
+.article__description {
+  font-weight: 300;
+}
+.article__button, .add-button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #4392F1;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #4392F1;
+  transition: 0.5s;
+}
+.article__button:hover {
+  background-color: #F7F7FF;
+}
+
+.add-article {
+  padding: 70px 0 0 400px;
+}
+.add-title {
+  color: #1B1B1E;
+  font-size: 15px;
+}
+.add-button:hover {
+  background-color: #F7F7FF;
+}
+
+
+/* Modal add course */
+
+
+.modal-add-article__wrapper {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.modal__form__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #1B1B1E;
+  text-align: center;
+  background-color: #4392F1;
+  width: 25px;
+  height: 25px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.modal__form__close:hover {
+  background-color: #F7F7FF;
+}
+.modal__form{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #F7F7FF;
+  width: 500px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  transition: 1s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.modal__form:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.modal__form__name__wrapper{
+  position: relative;
+  height: 60px;
+  width: 90%;
+}
+.modal__form__name__label {
+  top: 15px;
+  left: 0;
+  position: absolute;
+  color: #1B1B1E;
+  font-size: 12px;
+  transition: 0.4s;
+}
+.modal__form__name__input {
+border:none;
+background: transparent;
+border-bottom: 1px solid #1B1B1E;
+outline: 0;
+padding: 10px 0 10px 0;
+width: 100%;
+transition: 0.4s;
+}
+
+.modal__form__teacher__wrapper {
+  position: relative;
+  height: 60px;
+  width: 90%;
+}
+.modal__form__teacher__label {
+  top: 15px;
+  left: 0;
+  position: absolute;
+  color: #1B1B1E;
+  font-size: 12px;
+  transition: 0.4s;
+}
+.modal__form__teacher__input {
+border:none;
+background: transparent;
+border-bottom: 1px solid #1B1B1E;
+outline: 0;
+padding: 10px 0 10px 0;
+width: 100%;
+transition: 0.4s;
+}
+
+.modal__form__description__wrapper {
+  position: relative;
+  height: 70px;
+  margin-bottom: 30px;
+  width: 90%;
+}
+.modal__form__description__label {
+  top: 15px;
+  left: 0;
+  position: absolute;
+  color: #1B1B1E;
+  font-size: 12px;
+  transition: 0.4s;
+}
+.modal__form__description__input {
+  resize: none;
+border:none;
+background: transparent;
+border-bottom: 1px solid #1B1B1E;
+outline: 0;
+padding: 10px 0 10px 0;
+width: 100%;
+transition: 0.4s;
+}
+
+.modal__form__link__wrapper {
+  position: relative;
+  height: 70px;
+  width: 90%;
+}
+.modal__form__link__label {
+  top: 15px;
+  left: 0;
+  position: absolute;
+  color: #1B1B1E;
+  font-size: 12px;
+  transition: 0.4s;
+}
+.modal__form__link__input {
+border:none;
+background: transparent;
+border-bottom: 1px solid #1B1B1E;
+outline: 0;
+padding: 10px 0 10px 0;
+width: 100%;
+transition: 0.4s;
+}
+.modal__form__link__input:focus ~ .modal__form__link__label,
+.modal__form__link__input:valid ~ .modal__form__link__label,
+.modal__form__name__input:focus ~ .modal__form__name__label,
+.modal__form__name__input:valid ~ .modal__form__name__label,
+.modal__form__teacher__input:focus ~ .modal__form__teacher__label,
+.modal__form__teacher__input:valid ~ .modal__form__teacher__label,
+.modal__form__description__input:focus ~ .modal__form__description__label,
+.modal__form__description__input:valid ~ .modal__form__description__label
+{
+    transform: translate(20px,-25px);
+    color: #6eb0f7;
+    font-size: 12px;
+    opacity: 1;
+  }
+.modal__form__link__input:focus,
+.modal__form__name__input:focus,
+.modal__form__teacher__input:focus,
+.modal__form__description__input:focus
+{
+  border-color: #4392F1;
+}
+.modal__form__button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #4392F1;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 1px solid #4392F1;
+}
+.modal__form__button:hover {
+  background-color: #F7F7FF;
+}
+
+.active {
+  display: block;
+}
+

@@ -3,11 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- importing icons -->
+  <link href="../fontawesome-free-5.15.1-web/css/fontawesome.css" rel="stylesheet">
+  <link href="../fontawesome-free-5.15.1-web/css/brands.css" rel="stylesheet">
+  <link href="../fontawesome-free-5.15.1-web/css/solid.css" rel="stylesheet">
+  <!-- roboto font from google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+  <!-- main stylesheets -->
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/topNavigation.css">
+  <link rel="stylesheet" href="../styles/gallery.css">
+  <!-- script for icons -->
+  <script src="https://kit.fontawesome.com/788c6b8e16.js" crossorigin="anonymous"></script>
   <title>Paweł Kózka's website</title>
 </head>
 
 <body>
+  <!-- navigation -->
 
+  <header class="header">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list__item">
+          <i class="fas fa-home"></i>
+          <a class="navigation__list__item__link home" href="/pages/index.html">Home</a>
+        </li>
+        <li class="navigation__list__item">
+          <i class="fas fa-graduation-cap"></i>
+          <a class="navigation__list__item__link courses" href="/pages/courses.html">Courses</a>
+        </li>
+        <li class="navigation__list__item">
+          <i class="far fa-id-card"></i>
+          <a class="navigation__list__item__link about" href="/pages/about.html">About</a>
+        </li>
+        <li class="navigation__list__item">
+          <i class="fas fa-images"></i>
+          <a class="navigation__list__item__link gallery " href="/pages/gallery.html">Gallery</a>
+        </li>
+        <li class="navigation__list__item">
+          <i class="fas fa-pen"></i>
+          <a class="navigation__list__item__link contact" href="/pages/contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__left-section-wrapper">
+        <h4 class="footer__left-section__title">You are at <span>gallery</span> page</h4>
+      </div>
+      <nav class="footer__navigation">
+        <ul class="footer__navigation__list">
+          <li class="footer__navigation__list__item"><a href="/pages/index.html"
+              class="footer__navigation__list__item__link home">Home</a></li>
+          <li class="footer__navigation__list__item"><a href="/pages/courses.html"
+              class="footer__navigation__list__item__link courses">Courses</a></li>
+          <li class="footer__navigation__list__item"><a href="/pages/about.html"
+              class="footer__navigation__list__item__link about">About</a></li>
+          <li class="footer__navigation__list__item">
+            <a href="/pages/gallery.html" class="footer__navigation__list__item__link gallery">Gallery</a></li>
+          <li class="footer__navigation__list__item">
+            <a href="/pages/contact.html" class="footer__navigation__list__item__link contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__right-section-wrapper">
+        <div class="icons-wrapper">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-github"></i>
+        </div>
+        <h4 class="footer__right-section__title">Copyright.All rights reserved.</h4>
+      </div>
+    </div>
+  </footer>
+  </div>
 </body>
 
 </html>

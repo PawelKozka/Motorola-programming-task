@@ -23,7 +23,9 @@ i {
 }
 
 /* footer */
-
+.footer {
+  background-color: #F7F7FF;
+}
 .footer__wrapper{
   border-top: 1px solid #1B1B1E;
 }

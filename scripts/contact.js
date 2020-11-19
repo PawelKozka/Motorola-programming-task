@@ -65,7 +65,7 @@ const validation = () => {
   if (!emailSpaces) {
     emailValue = emailWhiteSpaces[0]
   } else { emailValue = '' }
-  if (emailValue === email || !emailValid) {
+  if (emailValue === email || emailValid !== null) {
     emailOk = false;
   }
 
@@ -79,17 +79,25 @@ const validation = () => {
     }
     if (!emailOk) {
       alertEmailWrapper.innerHTML += `<h5>Email</h5>
-          ${!emailValid ? `<p>Use valid email adress!</p>` : ''}
+          ${emailValid !== null ? `<p>Use valid email adress!</p>` : ''}
           ${emailValue === email ? `<p>It can't contain only whitespace characters.</p>` : ''}  `
     }
     alert.classList.add('active');
     return (passed = false)
   } else return (passed = true)
 }
+
+// clear form
+const clearForm = () => {
+  form.email.value = '';
+  form.name.value = '';
+  form.message.value = '';
+}
 sendBtn.addEventListener('click', e => {
   e.preventDefault();
   validation();
   if (passed) {
+    clearForm();
     popupSent.classList.add('active');
     setTimeout(() => { popupSent.classList.remove('active') }, 2000);
   }

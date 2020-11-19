@@ -1,7 +1,7 @@
 body {
   padding: 0 10vw;
-  min-height: 100vh;
   background-color: #F7F7FF;
+  min-height: 80vh;
 }
 
 /* navigation */
@@ -23,6 +23,7 @@ i {
 }
 
 /* footer */
+
 .footer {
   background-color: #F7F7FF;
 }
@@ -32,39 +33,30 @@ i {
 .footer__navigation__list__item__link {
   color:#1B1B1E;
 }
-
 .contact{
   font-weight: 700;
   color: #4392F1;
 }
+
 /* content */
-.content {
-  min-height: 100vh;
-  color: #F7F7FF;
-  padding: 100px 150px 100px 150px;
-}
 
 .form__wrapper{
   color: #1B1B1E;
   text-align: center;
   padding: 20px;
-  margin:30px auto;
+  margin: 150px auto 0 auto;
   width: 500px;
-  height: 450px;
   box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
 }
-
 .form__wrapper:hover {
   box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.2);
 }
-
 .contact__form__title {
   padding: 15px 0;
   color: #4392F1;
   font-size: 25px;
 }
-
 .form {
   padding: 30px 80px;
   display: flex;
@@ -76,7 +68,6 @@ i {
   position: relative;
   margin-bottom: 50px;
 }
-
 .form__name__input {
   border: none;
   background: transparent;
@@ -139,7 +130,6 @@ i {
   outline: 0;
   transition: 0.5s;
 }
-
 .form__message__label {
   position: absolute;
   top: -25px;
@@ -177,7 +167,6 @@ i {
 .popup__info {
   display: none;
 }
-
 .popup__info__wrapper {
   position: fixed;
   left: 50%;
@@ -206,7 +195,6 @@ i {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   display: none;
-  
 }
 .popup__alert__wrapper{
   position: fixed;
@@ -254,7 +242,6 @@ i {
 .active {
   display: block;
 }
-
 .alert {
   color: red;
   font-size: 10px;

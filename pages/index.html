@@ -1,3 +1,4 @@
+<!Doctype html>
 <html lang="en">
 
 <head>
@@ -12,6 +13,7 @@
   <!-- main stylesheets -->
   <link rel="stylesheet" href="../styles/footer.css">
   <link rel="stylesheet" href="../styles/topNavigation.css">
+  <link rel="stylesheet" href="/styles/animation.css">
   <link rel="stylesheet" href="../styles/index.css">
   <!-- script for icons -->
   <script src="https://kit.fontawesome.com/788c6b8e16.js" crossorigin="anonymous"></script>
@@ -47,10 +49,12 @@
   </header>
   <div class="content">
     <div class="welcome-wrapper">
+      <div class="welcome-text"></div>
       <h1 class="welcome__title">Welcome at <span>Paweł Kózka's website</span></h1>
       <p class="welcome__description">Know more about <span>front-end technologies!</span></p>
-      <button class="welcome__button-about-me">Who I am?</button>
-      <button class="welcome__button-start-to-learn">Let's learn!</button>
+      <button onclick="location.href = '/pages/about.html';" class="welcome__button-about-me">Who I am?</button>
+      <button onclick="location.href = '/pages/courses.html';" class="welcome__button-start-to-learn">Let's
+        learn!</button>
     </div>
   </div>
   <footer class="footer">
@@ -60,7 +64,6 @@
       </div>
       <nav class="footer__navigation">
         <ul class="footer__navigation__list">
-
           <li class="footer__navigation__list__item"><a href="/pages/index.html"
               class="footer__navigation__list__item__link home">Home</a></li>
           <li class="footer__navigation__list__item"><a href="/pages/courses.html"

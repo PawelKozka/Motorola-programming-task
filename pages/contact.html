@@ -1,3 +1,4 @@
+<!Doctype html>
 <html lang="en">
 
 <head>
@@ -48,65 +49,62 @@
     </nav>
   </header>
 
-  <!-- content -->
-  <div class="content">
-    <div class="form__wrapper">
-      <h3 class="contact__form__title">Send me a message!</h3>
-      <form class="form" action="" id="message-form">
-        <div class="form__name__wrapper">
-          <input name="name" class="form__name__input" type="text" placeholder="Enter your name">
-          <label class="form__name__label label" for="">Name</label>
-        </div>
-        <div class="form__email__wrapper">
-          <input name="email" class="form__email__input" type="text" placeholder="Give your e-mail">
-          <label class="form__email__label label" for="">E-mail</label>
-        </div>
-        <div class="form__message__wrapper">
-          <textarea name="message" class="form__message__input" name="" id="" cols="30" rows="4"
-            placeholder="Write your message"></textarea>
-          <label class="form__message__label label" for="">Message</label>
-        </div>
-        <button disabled="true" id="send-message-button" class="form__contact__button disabled">Send</button>
-      </form>
-    </div>
-
-
-    <!-- footer -->
-
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__left-section-wrapper">
-          <h4 class="footer__left-section__title">You are at <span>contact</span> page</h4>
-        </div>
-        <nav class="footer__navigation">
-          <ul class="footer__navigation__list">
-            <li class="footer__navigation__list__item"><a href="/pages/index.html"
-                class="footer__navigation__list__item__link home">Home</a></li>
-            <li class="footer__navigation__list__item"><a href="/pages/courses.html"
-                class="footer__navigation__list__item__link courses">Courses</a></li>
-            <li class="footer__navigation__list__item"><a href="/pages/about.html"
-                class="footer__navigation__list__item__link about">About</a></li>
-            <li class="footer__navigation__list__item">
-              <a href="/pages/gallery.html" class="footer__navigation__list__item__link gallery">Gallery</a></li>
-            <li class="footer__navigation__list__item">
-              <a href="/pages/contact.html" class="footer__navigation__list__item__link contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer__right-section-wrapper">
-          <div class="icons-wrapper">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-github"></i>
-          </div>
-          <h4 class="footer__right-section__title">Copyright.All rights reserved.</h4>
-        </div>
+  <!-- form -->
+  <div class="form__wrapper">
+    <h3 class="contact__form__title">Send me a message!</h3>
+    <form class="form" id="message-form">
+      <div class="form__name__wrapper">
+        <input name="name" class="form__name__input" type="text" placeholder="Enter your name" id="name">
+        <label class="form__name__label label" for="name">Name</label>
       </div>
-    </footer>
+      <div class="form__email__wrapper">
+        <input name="email" class="form__email__input" type="text" placeholder="Give your e-mail" id="email">
+        <label class="form__email__label label" for="email">E-mail</label>
+      </div>
+      <div class="form__message__wrapper">
+        <textarea name="message" class="form__message__input" cols="30" rows="4" placeholder="Write your message"
+          id="message"></textarea>
+        <label class="form__message__label label" for="message">Message</label>
+      </div>
+      <button disabled id="send-message-button" class="form__contact__button disabled">Send</button>
+    </form>
   </div>
 
-  <!-- modal sucessful send message -->
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__left-section-wrapper">
+        <h4 class="footer__left-section__title">You are at <span>contact</span> page</h4>
+      </div>
+      <nav class="footer__navigation">
+        <ul class="footer__navigation__list">
+          <li class="footer__navigation__list__item"><a href="/pages/index.html"
+              class="footer__navigation__list__item__link home">Home</a></li>
+          <li class="footer__navigation__list__item"><a href="/pages/courses.html"
+              class="footer__navigation__list__item__link courses">Courses</a></li>
+          <li class="footer__navigation__list__item"><a href="/pages/about.html"
+              class="footer__navigation__list__item__link about">About</a></li>
+          <li class="footer__navigation__list__item">
+            <a href="/pages/gallery.html" class="footer__navigation__list__item__link gallery">Gallery</a></li>
+          <li class="footer__navigation__list__item">
+            <a href="/pages/contact.html" class="footer__navigation__list__item__link contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__right-section-wrapper">
+        <div class="icons-wrapper">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-github"></i>
+        </div>
+        <h4 class="footer__right-section__title">Copyright.All rights reserved.</h4>
+      </div>
+    </div>
+  </footer>
+
+  <!-- message sent popup info -->
 
   <div class="popup__info" id="popup-success">
     <div class="popup__info__wrapper">
@@ -122,7 +120,6 @@
       <div id="popup-alert-email-wrapper"></div>
     </div>
   </div>
-
 
   <script src="../scripts/contact.js"></script>
 </body>

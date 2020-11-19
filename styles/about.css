@@ -1,5 +1,5 @@
 body {
-  padding: 0 10vw;
+  padding: 0 20vw;
   min-height: 100vh;
   background-color: #F7F7FF;
 }
@@ -23,6 +23,7 @@ i {
 }
 
 /* footer */
+
 .footer {
   background-color: #F7F7FF;
 }
@@ -32,9 +33,218 @@ i {
 .footer__navigation__list__item__link {
   color:#1B1B1E;
 }
-
 .about{
   font-weight: 700;
   color: #4392F1;
 }
+
 /* content */
+
+.content {
+  margin: 100px 0;
+}
+.top {
+  position: relative;
+  background-image: url(/images/about-background.png);
+  background-size: cover;
+  background-color: #F7F7FF;
+  box-shadow: inset 0 0 0 2000px rgba(247, 247, 255, 0.6);
+  margin-bottom: 50px;
+  padding-top: 70px;
+  min-height: 500px;
+  z-index: -1;
+}
+.top__picture {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  z-index: 1;
+}
+.top__name {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+.top__proffesion {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.top__number {
+  position: absolute;
+  top: 85%;
+  left: 25%;
+}
+.top__email {
+  position: absolute;
+  top: 85%;
+  right: 20%;
+}
+
+.bottom {
+  display: flex;
+  padding-bottom: 100px;
+}
+.bottom__left-side {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  margin-right: -5px;
+  padding-right: 10px;
+  border-right: 1px solid #1B1B1E;
+}
+.bottom__right-side {
+  display: inline-block;
+  text-align: center;
+  margin-left: -5px;
+  width: 50%;
+  padding-left: 10px;
+}
+.bottom__left-side__title, .bottom__right-side__title {
+  background-color: #4392F1;
+  color: #F7F7FF;
+  margin: 0 auto 20px auto;
+  width: 35%;
+  padding: 12px 0;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.bottom__left-side__about-me {
+  padding: 40px 50px;
+}
+.bottom__left-side__programs {
+  padding-top: 30px;
+}
+.programs {
+  list-style: none;
+}
+.language {
+  text-align: left;
+  position: relative;
+  padding:0 0 10px 50px;
+}
+.line {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  width: 50%;
+  height: 5px;
+  background-color: #1B1B1E;
+  border-radius: 30px;
+}
+.first::before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 45%;
+  height: 5px;
+  background-color: #4392F1;
+  border-radius: 30px;
+}
+.first::after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 45%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #4392F1;
+  border-radius: 50%;
+  background-color: #F7F7FF;
+}
+.second::before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 55%;
+  height: 5px;
+  background-color: #4392F1;
+  border-radius: 30px;
+}
+.second::after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 55%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #4392F1;
+  border-radius: 50%;
+  background-color: #F7F7FF;
+}
+.third::before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 65%;
+  height: 5px;
+  background-color: #4392F1;
+  border-radius: 30px;
+}
+.third::after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 65%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #4392F1;
+  border-radius: 50%;
+  background-color: #F7F7FF;
+}
+.fourth::before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 40%;
+  height: 5px;
+  background-color: #4392F1;
+  border-radius: 30px;
+}
+.fourth::after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 40%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #4392F1;
+  border-radius: 50%;
+  background-color: #F7F7FF;
+}
+.strength__list {
+  list-style: none;
+  padding-left: 60px;
+}
+.certificats__list {
+  list-style: none;
+  padding: 20px 0 0 60px;
+}
+.certificats__list__item, .strength__list__item {
+  padding: 5px 0;
+  text-align: left;
+}
+.bottom__right-side__strengths, .bottom__right-side__courses{
+  background-color: #4392F1;
+  color: #F7F7FF;
+  margin: 0 auto 20px auto;
+  width: 35%;
+  padding: 12px 0;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.bottom__right-side__courses {
+  margin-top: 20px;
+}
